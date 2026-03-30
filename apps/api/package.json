@@ -1,0 +1,30 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev"
+  },
+  "dependencies": {
+    "fastify": "^4.27.0",
+    "@fastify/cors": "^9.0.0",
+    "@fastify/helmet": "^10.0.0",
+    "@fastify/rate-limit": "^7.0.0",
+    "@fastify/jwt": "^6.0.0",
+    "zod": "^3.23.0",
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.3.0",
+    "@prisma/client": "^4.17.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "tsx": "^3.12.7",
+    "@types/node": "^20.6.1",
+    "@types/bcrypt": "^5.0.0",
+    "prisma": "^4.17.0"
+  }
+}

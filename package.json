@@ -1,13 +1,14 @@
 {
   "name": "keepcash",
+  "private": true,
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:web": "pnpm --filter web dev",
+    "dev:api": "pnpm --filter api dev",
+    "dev": "pnpm dev:web & pnpm dev:api",
+    "build:web": "pnpm --filter web build",
+    "build:api": "pnpm --filter api build",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "packageManager": "pnpm@10.32.1"
 }

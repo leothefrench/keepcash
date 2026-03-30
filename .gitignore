@@ -1,0 +1,26 @@
+# Node
+node_modules/
+.pnp/
+.pnpm-store/
+
+# Env
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Build
+dist/
+build/
+.next/
+.out/
+
+# Logs
+*.log
+
+# MacOS
+.DS_Store
+
+# Vercel
+.vercel/
